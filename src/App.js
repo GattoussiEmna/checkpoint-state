@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Profile from './component/Profile';
+import myImg from './assets/emna.jpg'
+export default class App extends Component {
+    constructor(){
+    super()
+    this.state={
+    show : true
+    }
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+handleShow=()=>{
+  this.setState(
+    {
+      show : !this.state.show
+    }
+  )
 }
+  render() {
+  
+    return (
 
-export default App;
+      <div className='App'>
+        <button onClick={this.handleShow}>Click here !</button>
+        {
+          this.state.show ? (<Profile
+            fullName="Gattousssi Emna"
+            
+            proffession="IT Engineer"
+            Bio="“I believe in being strong when everything seems to be going wrong.”"
+            Bioo="“I believe that happy girls are the prettiest girls.”"
+            Biooo="“I believe that tomorrow is another day, and I believe in miracles.”"
+            myImg={myImg}/>
+            ) : null
+        }
+      
+      
+      </div>
+    )
+    
+  }
+}

@@ -1,0 +1,45 @@
+body{
+    background-color: hotpink;
+}
+button :hover{
+    background-color: aqua;
+}
+button{
+    color: crimson;
+    margin-left: 80rem;
+}
+
+
+
+h1{
+    color: aliceblue;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Inspiration', cursive;
+    font-family: 'Playfair Display', serif;
+    margin-left: 10rem;
+}
+h2{
+    color: aliceblue;
+    font-family: 'Hurricane', cursive;
+font-family: 'Inspiration', cursive;
+font-family: 'Playfair Display', serif;
+
+
+}
+.proffession {
+    margin-left: 20rem;
+}
+img{
+    margin-left: 45rem;
+    width: 250px;
+    height: 250px;
+}
+.Bio{
+margin-left: 30rem;
+}
+.Bioo{
+    margin-left: 30rem;
+}
+.Biooo{
+    margin-left: 30rem;
+}
